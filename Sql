@@ -1,0 +1,40 @@
+-- SQL COMMAND Create the students table
+
+CREATE TABLE students (
+
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+
+    name TEXT,
+
+    age INTEGER,
+
+    gender TEXT
+
+);
+
+-- Insert three rows of data
+
+INSERT INTO students (name, age, gender) VALUES 
+
+    ('REENA, 20, 'Female'),
+
+    ('BASU', 22, 'Male'),
+
+    ('CHANDAN', 19, 'Male');
+
+-- Retrieve all rows from the students table
+
+SELECT * FROM students;
+
+-- Update the name of the student with id=2
+
+UPDATE students SET name='SAADHU' WHERE id=2;
+
+-- Delete the row with id=3
+
+DELETE FROM students WHERE id=3;
+
+-- Retrieve all rows from the students table again
+
+SELECT * FROM students;
+
